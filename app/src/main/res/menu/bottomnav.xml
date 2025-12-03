@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/fragment_ingredient"
+        android:title="재료"
+        android:icon="@drawable/ic_fragment"/>
+    <item
+        android:id="@+id/fragment_favorite"
+        android:title="즐겨찾기"
+        android:icon="@drawable/ic_favorite"/>
+    <item
+        android:id="@+id/fragment_video"
+        android:title="동영상"
+        android:icon="@drawable/ic_video"/>
+    <item
+        android:id="@+id/fragment_category"
+        android:title="카테고리"
+        android:icon="@drawable/ic_category"/>
+    <item
+        android:id="@+id/fragment_chat"
+        android:title="AI 채팅"
+        android:icon="@drawable/ic_chat"/>
+</menu>

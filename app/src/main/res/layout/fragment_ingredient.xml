@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ingredient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ingredient_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:text="메인 재료를 선택해주세요."
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="60dp"
+                    app:layout_constraintWidth_percent="0.33"
+                    app:cardBackgroundColor="@android:color/white"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/meat_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text="고기"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:icon="@drawable/meat"
+                        app:iconGravity="textTop"
+                        app:iconSize="0dp"
+                        app:iconPadding="5dp"
+                        app:iconTint="@null"
+                        app:backgroundTint="@android:color/white"
+                        android:insetLeft="0dp"
+                        android:insetRight="0dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"/>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/fish_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text="생선"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:icon="@drawable/fish"
+                        app:iconGravity="textTop"
+                        app:iconSize="60dp"
+                        app:iconPadding="0dp"
+                        app:iconTint="@null"
+                        app:backgroundTint="@android:color/white"
+                        android:insetLeft="0dp"
+                        android:insetRight="0dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"/>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    android:layout_weight="1">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/vegetable_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text="채소"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:icon="@drawable/vegetable"
+                        app:iconGravity="textTop"
+                        app:iconSize="60dp"
+                        app:iconPadding="5dp"
+                        app:iconTint="@null"
+                        app:backgroundTint="@android:color/white"
+                        android:insetLeft="0dp"
+                        android:insetRight="0dp"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"/>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardBackgroundColor="@android:color/white">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/egg_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text="계란"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:icon="@drawable/egg"
+                        app:iconGravity="textTop"
+                        app:iconSize="60dp"
+                        app:iconTint="@null"
+                        app:backgroundTint="@android:color/white"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardBackgroundColor="@android:color/white">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/fruit_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text="과일"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:icon="@drawable/fruit"
+                        app:iconGravity="textTop"
+                        app:iconSize="60dp"
+                        app:iconTint="@null"
+                        app:backgroundTint="@android:color/white"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardBackgroundColor="@android:color/white">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/rice_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text="밥"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:icon="@drawable/rice"
+                        app:iconGravity="textTop"
+                        app:iconSize="60dp"
+                        app:iconTint="@null"
+                        app:backgroundTint="@android:color/white"/>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardBackgroundColor="@android:color/white">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/milk_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text="유제품"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:icon="@drawable/milk"
+                        app:iconGravity="textTop"
+                        app:iconSize="60dp"
+                        app:iconTint="@null"
+                        app:backgroundTint="@android:color/white"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardBackgroundColor="@android:color/white">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/tofu_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text="두부"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:icon="@drawable/tofu"
+                        app:iconGravity="textTop"
+                        app:iconSize="60dp"
+                        app:iconTint="@null"
+                        app:backgroundTint="@android:color/white"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardBackgroundColor="@android:color/white">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/seasoning_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text="양념"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:icon="@drawable/seasoning"
+                        app:iconGravity="textTop"
+                        app:iconSize="60dp"
+                        app:iconTint="@null"
+                        app:backgroundTint="@android:color/white"/>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardBackgroundColor="@android:color/white">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/spices_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text="향신료"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:icon="@drawable/spices"
+                        app:iconGravity="textTop"
+                        app:iconSize="60dp"
+                        app:iconTint="@null"
+                        app:backgroundTint="@android:color/white"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardBackgroundColor="@android:color/white">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/bread_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text="빵"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:icon="@drawable/bread"
+                        app:iconGravity="textTop"
+                        app:iconSize="60dp"
+                        app:iconTint="@null"
+                        app:backgroundTint="@android:color/white"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardBackgroundColor="@android:color/white">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/soup_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text="국물"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:icon="@drawable/soup"
+                        app:iconGravity="textTop"
+                        app:iconSize="60dp"
+                        app:iconTint="@null"
+                        app:backgroundTint="@android:color/white"/>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardBackgroundColor="@android:color/white">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/noodle_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text="면"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:icon="@drawable/noodle"
+                        app:iconGravity="textTop"
+                        app:iconSize="60dp"
+                        app:iconTint="@null"
+                        app:backgroundTint="@android:color/white"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardBackgroundColor="@android:color/white">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/dessert_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text="간식"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:icon="@drawable/dessert"
+                        app:iconGravity="textTop"
+                        app:iconSize="60dp"
+                        app:iconTint="@null"
+                        app:backgroundTint="@android:color/white"/>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="60dp"
+                    app:cardBackgroundColor="@android:color/white">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/instant_bt"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:text="간편식"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        app:icon="@drawable/instant"
+                        app:iconGravity="textTop"
+                        app:iconSize="60dp"
+                        app:iconTint="@null"
+                        app:backgroundTint="@android:color/white"/>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
